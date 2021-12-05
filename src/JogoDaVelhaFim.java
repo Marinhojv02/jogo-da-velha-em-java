@@ -10,8 +10,8 @@ public class JogoDaVelhaFim {
                 System.out.println(" Deu velha ");
                 break;
             }else{
-                int movimento_1=Comandos.jogada_x();
-                int movimento_2=Comandos.jogada_x();
+                int movimento_1=Comandos.jogada();
+                int movimento_2=Comandos.jogada();
                 Comandos.ExecutaJogada(turno, matriz, movimento_1, movimento_2);
                 Comandos.ImprimeMatriz(matriz);
                 if(Comandos.VerificaFim(matriz) == 1){
