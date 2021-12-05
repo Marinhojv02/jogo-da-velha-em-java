@@ -28,7 +28,7 @@ public class Comandos {
         }
         return void.class;
     }
-    public static int jogada_x(){
+    public static int jogada(){
         Scanner jogadaScanner = new Scanner(System.in);
         System.out.println("digite entre 1 e 3 onde deseja jogar");
         int x = jogadaScanner.nextInt();
@@ -37,18 +37,7 @@ public class Comandos {
             x = jogadaScanner.nextInt();
             jogadaScanner.close();
         }
-        return x-1;
-    }
-    public static int jogada_y(){
-        Scanner jogadaScanner = new Scanner(System.in);
-        System.out.println("digite entre 1 e 3 onde deseja jogar");
-        int y = jogadaScanner.nextInt();
-        while ( y < 1 || y > 3 ){
-            System.out.println("coordenada invalida, escolha um local dentro do tabuleiro: ");
-            y = jogadaScanner.nextInt();
-            jogadaScanner.close();
-        }
-        return y-1;
+        return x;
     }
     public static void ExecutaJogada(int turno,String matriz[][],int i,int j){
         Scanner jogadaScanner = new Scanner(System.in);
